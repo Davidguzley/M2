@@ -1,8 +1,8 @@
 # M2
 
-##Selección del set de datos
+## Selección del set de datos
 
-###Descripción
+### Descripción
 El dataset "Nike Adidas Shoes for Image Classification" es un conjunto de datos recopilado y compartido en Kaggle por el usuario Ifeanyi Nneji. Este dataset se creó específicamente para la clasificación de imágenes de zapatos de las marcas Nike y Adidas. Las imágenes se extrajeron de bing usando bing_image_search de pypi, se descargaron 400 imágenes de cada clase y luego el conjunto de datos se recortó a 300 (se eliminaron algunas imágenes no relacionadas en el proceso de compilación del conjunto de datos). A continuación, se proporcionarann una descripción detallada del dataset:
 
 * **Tamaño del dataset:** El dataset contiene un total de 576 imágenes en formato .jpg de tenis nike y adidas. Divididos de la siguiente manera:
@@ -17,6 +17,3 @@ El dataset "Nike Adidas Shoes for Image Classification" es un conjunto de datos 
 * **Variedad de imágenes:** El dataset contiene una variedad de imágenes de zapatos, incluyendo diferentes estilos, colores y ángulos de visualización. Esto ayudará a tu modelo a capturar las características distintivas de cada marca y realizar una clasificación precisa.
 
 * **Calidad de las imágenes:** Las imágenes del dataset tienen una resolución razonablemente alta y una calidad visual adecuada para el propósito de clasificación. Sin embargo, es posible que se encuentre algunas variaciones en la calidad debido a la diversidad de fuentes y condiciones de captura.
-
-
-[Colab]([https://drive.google.com/file/d/1vMarXPs9VmlpQWLlgmmVLSz-NbJtRSML/view?usp=sharing](https://colab.research.google.com/drive/1WIvE6yS1JT9x9_oohmyw9cYngslMfh11?usp=sharing))

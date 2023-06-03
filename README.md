@@ -1,21 +1,28 @@
 # M2
 
-## Selección del conjunto de datos
+## Clasificación de imágenes Fashion MNIST
 
-### Descripción
-El conjunto de datos "Nike Adidas Shoes for Image Classification" es un conjunto de datos recopilado y compartido en Kaggle por el usuario Ifeanyi Nneji. Este conjunto de datos se creó específicamente para la clasificación de imágenes de zapatos de las marcas Nike y Adidas. Las imágenes se extrajeron de Bing utilizando la biblioteca "bing_image_search" de pypi. Se descargaron inicialmente 400 imágenes de cada clase y luego se recortó el conjunto de datos a 300 imágenes (se eliminaron algunas imágenes no relacionadas en el proceso de compilación del conjunto de datos). A continuación, se proporciona una descripción detallada del conjunto de datos:
+**[Fashion-MNIST](https://github.com/zalandoresearch/fashion-mnist)** es un conjunto de datos de imágenes de artículos de Zalando, que consta de un conjunto de entrenamiento de 60,000 ejemplos y un conjunto de prueba de 10,000 ejemplos. Cada ejemplo es una imagen en escala de grises de 28x28, asociada a una etiqueta de una de las 10 clases. El conjunto de datos sirve como un reemplazo directo del conjunto de datos original [MNIST](http://yann.lecun.com/exdb/mnist/) para la evaluación de algoritmos de aprendizaje automático. Comparte el mismo tamaño de imagen y la estructura de divisiones de entrenamiento y prueba. Puedes obtener más información sobre el conjunto de datos en este [enlace de Kaggle](https://www.kaggle.com/datasets/zalando-research/fashionmnist).
 
-* **Tamaño del conjunto de datos:** El conjunto de datos contiene un total de 576 imágenes en formato .jpg de zapatillas Nike y Adidas, distribuidas de la siguiente manera:
-  * Entrenamiento: 230 imágenes de Nike y 230 imágenes de Adidas.
-  * Pruebas: 30 imágenes de Nike y 30 imágenes de Adidas.
-  * Validación: 28 imágenes de Nike y 27 imágenes de Adidas.
+En este repositorio se implementaron dos modelos para la detección automatica de cada una de sus 10 clases.
+Aquí están los diferentes cuadernos:
 
-* **Distribución de clases:** El conjunto de datos está equilibrado, lo que significa que hay una cantidad igual de imágenes de zapatos Nike y Adidas. Esto asegura que tu modelo de clasificación pueda aprender de manera justa y precisa para ambas marcas.
+* **1-Convolution Layer CNN**: Entrené un clasificador CNN simple con 1 capa de convolución, 1 capa de max-pooling, 2 capas densas y 1 capa de dropout. Obtuve una precisión del 92.29%.
+* **4-Convolution Layer CNN**: Entrené un clasificador CNN aún más profundo con 4 capas de convolución, 2 capas de max-pooling, 3 capas densas, 5 capas de dropout y 6 capas de normalización por lotes. Obtuve una precisión del 93.52%.
 
-* **Anotaciones:** Cada imagen está etiquetada correctamente con la marca correspondiente, es decir, si es un zapato Nike o un zapato Adidas. Estas etiquetas son cruciales para entrenar un modelo de aprendizaje automático capaz de diferenciar entre ambas marcas.
+### Requisitos
 
-* **Variedad de imágenes:** El conjunto de datos contiene una variedad de imágenes de zapatos, incluyendo diferentes estilos, colores y ángulos de visualización. Esto ayudará a tu modelo a capturar las características distintivas de cada marca y realizar una clasificación precisa.
+* [Python 2.7](https://www.python.org/download/releases/2.7/) o [Python 3.6](https://www.python.org/downloads/release/python-360/)
+* [Jupyter Notebook](http://jupyter.org/)
 
-* **Calidad de las imágenes:** Las imágenes del conjunto de datos tienen una resolución razonablemente alta y una calidad visual adecuada para el propósito de clasificación. Sin embargo, es posible encontrar algunas variaciones en la calidad debido a la diversidad de fuentes y condiciones de captura.
+### Dependencias
 
-Conjunto de datos: [Enlace al conjunto de datos](https://www.kaggle.com/datasets/ifeanyinneji/nike-adidas-shoes-for-image-classification-dataset?select=validation)
+Elige las versiones más recientes de las siguientes dependencias:
+
+* [pandas](https://pandas.pydata.org/)
+* [numpy](http://www.numpy.org/)
+* [matplotlib](https://matplotlib.org/)
+* [sklearn](http://scikit-learn.org/stable/)
+* [keras](https://keras.io/)
+* [tensorflow](https://www.tensorflow.org/)
+

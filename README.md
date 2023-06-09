@@ -28,8 +28,8 @@ Elige las versiones más recientes de las siguientes dependencias:
 
 ### Correcciones
 * En un principio se opto por usar un dataset de pokemon pero este tenia muchos problemas con el formato de sus imagenes, lo que causaba muchos problemas en el entrenamiento del modelo.
-* Posteriormente se cambio por un dataset de tenis de nike y adidas, en el que hubieron muchos problemas de sobreajuste del lado del validation asi como valores de perdida muy altos elevados y valores de precision muy bajos sin importar los cambios que se hicieran.
+* Posteriormente se cambio por un dataset de tenis de nike y adidas, en el que hubieron muchos problemas de sobreajuste del lado del validation asi como valores de perdida muy altos y valores de precision muy bajos sin importar los cambios que se hicieran.
 * Se encontraron los resultados esperados con el dataset actual sin ningun inconveniente con una implementación en mucho menor tiempo.
 * En la carpeta de **Intentos** se encuentran los notebooks hechos en colab que se desecharon y/o no se pudieron completar.
-* Se corri los modelos finales desde un entorno de ejecución local.
+* Se corrio los modelos finales desde un entorno de ejecución local en vez de uno remoto.
 
